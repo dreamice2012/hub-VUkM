@@ -20,11 +20,7 @@ model = KNeighborsClassifier()
 model.fit(input_feature, dataset["label"].values)
 
 client = OpenAI(
-    # 
-    # https://bailian.console.aliyun.com/?tab=model#/api-key
     api_key="sk-20b5cf7cc6e04b2da387fdc81d7ead76",  # 账号绑定的
-
-    # 大模型厂商的地址
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 
